@@ -1,0 +1,16 @@
+version: 2
+
+profiles:
+  owsbanco:
+    target: dev
+    outputs:
+      dev:
+        type: postgres
+        host: localhost
+        user: postgres
+        password: postgres
+        dbname: postgres
+        port: 5432
+        schema: bronze
+        threads: 1
+        encoding: utf-8
